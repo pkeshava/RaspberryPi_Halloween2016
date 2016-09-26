@@ -3,12 +3,12 @@
 import time
 
 #Use the following GPIOs for LEDs
-GPIO_redeyes1 = 17
-#GPIO_redeyes2 = 27
-GPIO_greeneyes1 = 21
-#GPIO_greeneyes2 = 22
-GPIO_blueeyes1 = 23
-#GPIO_blueeyes2 = 24
+GPIO_redeyes1 = '17'
+#GPIO_redeyes2 = '27'
+GPIO_greeneyes1 = '21'
+#GPIO_greeneyes2 = '22'
+GPIO_blueeyes1 = '23'
+#GPIO_blueeyes2 = '24'
 
 try:
     f= open ('/sys/class/gpio/unexport','w')
