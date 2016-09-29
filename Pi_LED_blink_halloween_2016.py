@@ -1,6 +1,16 @@
 # script to blink LED's two at a time for Bryce and Naz's bush outside during halloween
 
 import time
+#GPIOs that are available
+#0,1,2,3,4,7,8,9,10,11,14,15,17,18,21,22,23,24,25,27
+
+#Create object that is a pair of eyes
+#Each instance of this object contains
+    #GPIO
+    #Descripter
+#Create an array of the eyes I'm going to be dealing with
+    # The elements of this array are instances of the class eyeball
+
 
 #Use the following GPIOs for LEDs
 GPIO_redeyes1 = '17'
@@ -27,6 +37,11 @@ except IOError as e:
 try:
     f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_greeneyes1))
+    f.write(str(GPIO_blueeyes1))
+    .
+    .
+    .
+
     f.close()
 except IOError as e:
     lol=0
