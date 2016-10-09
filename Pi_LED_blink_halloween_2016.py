@@ -3,22 +3,30 @@
 import time
 #GPIOs that are available
 #0,1,2,3,4,7,8,9,10,11,14,15,17,18,21,22,23,24,25,27
-
-#Create object that is a pair of eyes
-#Each instance of this object contains
-    #GPIO
-    #Descripter
-#Create an array of the eyes I'm going to be dealing with
-    # The elements of this array are instances of the class eyeball
-
+#Map
 
 #Use the following GPIOs for LEDs
+GPIO_redeyes1 = '0'
+GPIO_redeyes2 = '1'
+GPIO_greeneyes1 = '2'
+GPIO_greeneyes2 = '3'
+GPIO_blueeyes1 = '4'
+GPIO_blueeyes2 = '7'
+GPIO_redeyes1 = '8'
+GPIO_redeyes2 = '9'
+GPIO_greeneyes1 = '10'
+GPIO_greeneyes2 = '11'
+GPIO_blueeyes1 = '14'
+GPIO_blueeyes2 = '15'
 GPIO_redeyes1 = '17'
-#GPIO_redeyes2 = '27'
+GPIO_redeyes2 = '18'
 GPIO_greeneyes1 = '21'
-#GPIO_greeneyes2 = '22'
+GPIO_greeneyes2 = '22'
 GPIO_blueeyes1 = '23'
-#GPIO_blueeyes2 = '24'
+GPIO_blueeyes2 = '24'
+GPIO_blueeyes2 = '25'
+GPIO_blueeyes2 = '27'
+
 
 try:
     f= open ('/sys/class/gpio/unexport','w')
@@ -38,34 +46,24 @@ try:
     f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_greeneyes1))
     f.write(str(GPIO_blueeyes1))
-    .
-    .
-    .
-
-    f.close()
-except IOError as e:
-    lol=0
-
-#try:
-#    f= open ('/sys/class/gpio/unexport','w')
-#    f.write(str(GPIO_greeneyes2))
-#    f.close()
-#except IOError as e:
-#    lol=0
-
-try:
-    f= open ('/sys/class/gpio/unexport','w')
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
+    f.write(str(GPIO_blueeyes1))
     f.write(str(GPIO_blueeyes1))
     f.close()
-except IOError as e:
-    lol=0
-
-#try:
-#    f= open ('/sys/class/gpio/unexport','w')
-#    f.write(str(GPIO_blueeyes2))
-#    f.close()
-#except IOError as e:
-#    lol=0
 
 
 #Export pin number
