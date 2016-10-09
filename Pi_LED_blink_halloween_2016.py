@@ -31,45 +31,208 @@ GPIO_blueeyes1 = '27'
 #GPIO_blueeyesXXXXX = '27'
 
 
+#try:
+#    f= open ('/sys/class/gpio/unexport','w')
+#    f.write(str(GPIO_redeyes1))
+#    f.write(str(GPIO_redeyes2))
+#    f.write(str(GPIO_redeyes3))
+#    f.write(str(GPIO_redeyes4))
+#    f.write(str(GPIO_redeyes5))
+#    f.write(str(GPIO_redeyes6))
+#    f.write(str(GPIO_yelloweyes1))
+#    f.write(str(GPIO_yelloweyes2))
+#    f.write(str(GPIO_yelloweyes3))
+#    f.write(str(GPIO_yelloweyes4))
+#    f.write(str(GPIO_yelloweyes5))
+#    f.write(str(GPIO_greeneyes1))
+#    f.write(str(GPIO_greeneyes2))
+#    f.write(str(GPIO_greeneyes3))
+#    f.write(str(GPIO_blueeyes1))
+#    f.close()
+#except IOError as e:
+#    lol=0
+#Unexport pin number
 try:
     f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_redeyes1))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_redeyes2))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_redeyes3))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_redeyes4))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_redeyes5))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_redeyes6))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_yelloweyes1))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_yelloweyes2))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_yelloweyes3))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_yelloweyes4))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_yelloweyes5))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_greeneyes1))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_greeneyes2))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_greeneyes3))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/unexport','w')
     f.write(str(GPIO_blueeyes1))
     f.close()
 except IOError as e:
     lol=0
-
-#Export pin number
-f= open ('/sys/class/gpio/export','w')
-f.write(str(GPIO_redeyes1))
-f.write(str(GPIO_redeyes2))
-f.write(str(GPIO_redeyes3))
-f.write(str(GPIO_redeyes4))
-f.write(str(GPIO_redeyes5))
-f.write(str(GPIO_redeyes6))
-f.write(str(GPIO_yelloweyes1))
-f.write(str(GPIO_yelloweyes2))
-f.write(str(GPIO_yelloweyes3))
-f.write(str(GPIO_yelloweyes4))
-f.write(str(GPIO_yelloweyes5))
-f.write(str(GPIO_greeneyes1))
-f.write(str(GPIO_greeneyes2))
-f.write(str(GPIO_greeneyes3))
-f.write(str(GPIO_blueeyes1))
-f.close()
+#Export pin numberqs
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_redeyes1))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_redeyes2))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_redeyes3))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_redeyes4))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_redeyes5))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_redeyes6))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_yelloweyes1))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_yelloweyes2))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_yelloweyes3))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_yelloweyes4))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_yelloweyes5))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_greeneyes1))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_greeneyes2))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_greeneyes3))
+    f.close()
+except IOError as e:
+    lol=0
+try:
+    f= open ('/sys/class/gpio/export','w')
+    f.write(str(GPIO_blueeyes1))
+    f.close()
+except IOError as e:
+    lol=0
 
 #Define Pin Direction as Output for LED
 path = '/sys/class/gpio/gpio' + GPIO_redeyes1 + '/direction'
