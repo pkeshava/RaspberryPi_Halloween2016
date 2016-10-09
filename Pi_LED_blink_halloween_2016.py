@@ -9,8 +9,8 @@ import time
 #3 pairs of green
 #1 pair of blue
 #Use the following GPIOs for LEDs
-GPIO_redeyes1 = '0'
-GPIO_redeyes2 = '1'
+GPIO_redeyes1 = '24'
+GPIO_redeyes2 = '25'
 GPIO_redeyes3 = '2'
 GPIO_redeyes4 = '3'
 GPIO_redeyes5 = '4'
