@@ -23,26 +23,26 @@ class PinManager:
 
     def export_pin(self, pin):
         f = open('/sys/class/gpio/export', 'w')
-        f.write(str(eyes.pin))
+        f.write(str(pin))
         f.close()
 
-    def define_direction(self, pin, dir):
-        path = '/sys/class/gpio/gpio' + pin + '/direction'
+    def define_direction(self, pin, direction):
+        path = '/sys/class/gpio/gpio' + str(pin) + '/direction'
         f = open(path, 'w')
-        f.write(dir)
+        f.write(str(direction))
         f.close()
 
     def set_pin_value(self, pin, value):
-        path = '/sys/class/gpio/gpio' + pin + '/value'
+        path = '/sys/class/gpio/gpio' + str(pin) + '/value'
         f = open(path, 'w')
-        f.write(value)
+        f.write(str(value))
         f.close()
 
 # Use the following GPIOs for LEDs
 eyesList = [BushEyes(2), BushEyes(3), BushEyes(4)]
 
 # Create a pin manager to help us write pin values and directions
-pinMgr = PinManager
+pinMgr = PinManager()
 
 
 for eyes in eyesList:
