@@ -62,11 +62,26 @@ for eyes in eyesList:
 
 random = random.Random()
 
+
+def getEyesToBlink():
+    eyes_to_blink = []
+
+    for i in range(3):
+        index = random.randint(0, len(eyesList) - 1)
+        eyes_to_blink.append(eyesList[index])
+
+    return eyes_to_blink
+
+
 while 1:
-    index = random.randint(0, len(eyesList) - 1)
-    pinMgr.set_pin_value(eyesList[index].pin, 1)
+    eyesToBlink = getEyesToBlink()
+
+    for selectedEye in eyesToBlink:
+        pinMgr.set_pin_value(selectedEye.pin, 1)
     time.sleep(1)
-    pinMgr.set_pin_value(eyesList[index].pin, 0)
+
+    for selectedEye in eyesToBlink:
+        pinMgr.set_pin_value(selectedEye.pin, 0)
     time.sleep(0.5)
 
 for eyes in eyesList:
